@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Виды Формы</title>
+    <style>
+        form {
+            width: 50%;
+            background-color: rgba(238, 255, 0, 0.644);
+            margin: 0 auto;
+            padding: 30px;
+            border: 2px solid black;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <h3>форма регистрации</h3>
+        <fieldset>
+            <legend>Рег данные</legend>
+            Введите логин <input type="text" placeholder="Ваш email или номер" name="login"> <br> <br>
+            Введите пароль <input type="password" placeholder="Ваш пароль" name="pass" required> <br> <br>
+            Введите почту <input type="email" placeholder="Ваш email" name="email" required> <br> <br>
+            Введите дату рождения <input type="date" name="date"> <br> <br>
+        </fieldset>
+        <fieldset>
+            <legend>Ваши интересы</legend>
+            <input type="checkbox" name="Interest" id="music"> <label for="music">Реп</label><br>
+
+            <label><input type="checkbox" name="Interest"> Спортик </label><br>
+            <label><input type="checkbox" name="Interest" checked> Програмирование </label><br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Род деятельности</legend>
+            <label><input type="radio" name="activity"> Не Работаю </label> <br>
+            <label><input type="radio" name="activity"> Работаю </label> <br>
+            <label><input type="radio" name="activity" checked> Учусь </label> <br>
+        </fieldset>
+        <br>
+        Укажите город <br>
+        <select name="city">
+            <option selected disabled>Выберите Город</option>
+            <option value="Тюмень">Тюмень</option>
+            <option value="Екатеринбург">Екатеринбург</option>
+            <option value="Москва">Москва</option>
+        </select>
+        <br>
+        <br>
+        <textarea name="" placeholder="Информация обо мне" cols="50" rows="10"></textarea>
+        <input type="submit" value="Отправить">
+    </form>
+
+
+
+    </form>
+</body>
+
+</html>
